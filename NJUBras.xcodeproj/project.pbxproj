@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B176AD5157FA5C4008C77F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176AD4157FA5C4008C77F3 /* UIKit.framework */; };
+		4B176AD7157FA5C4008C77F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176AD6157FA5C4008C77F3 /* Foundation.framework */; };
+		4B176AD9157FA5C4008C77F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176AD8157FA5C4008C77F3 /* CoreGraphics.framework */; };
+		4B176ADF157FA5C4008C77F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B176ADD157FA5C4008C77F3 /* InfoPlist.strings */; };
+		4B176AE1157FA5C4008C77F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AE0157FA5C4008C77F3 /* main.m */; };
+		4B176AE5157FA5C4008C77F3 /* NJUBrasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AE4157FA5C4008C77F3 /* NJUBrasAppDelegate.m */; };
+		4B176AE8157FA5C4008C77F3 /* NJUBrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AE7157FA5C4008C77F3 /* NJUBrasViewController.m */; };
+		4B176AEB157FA5C4008C77F3 /* NJUBrasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B176AE9157FA5C4008C77F3 /* NJUBrasViewController.xib */; };
+		4B176B0B157FA625008C77F3 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AF3157FA625008C77F3 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B0C157FA625008C77F3 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AF6157FA625008C77F3 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B0D157FA625008C77F3 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AF8157FA625008C77F3 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B0E157FA625008C77F3 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AFA157FA625008C77F3 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B0F157FA625008C77F3 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AFC157FA625008C77F3 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B10157FA625008C77F3 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176AFE157FA625008C77F3 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B11157FA625008C77F3 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176B02157FA625008C77F3 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B12157FA625008C77F3 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176B04157FA625008C77F3 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B13157FA625008C77F3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176B07157FA625008C77F3 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B176B14157FA625008C77F3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B176B0A157FA625008C77F3 /* MBProgressHUD.m */; };
+		4B176B1E157FA65A008C77F3 /* bras_ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B16157FA65A008C77F3 /* bras_ico.png */; };
+		4B176B1F157FA65A008C77F3 /* login_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B17157FA65A008C77F3 /* login_all.png */; };
+		4B176B20157FA65A008C77F3 /* login_bac.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B18157FA65A008C77F3 /* login_bac.png */; };
+		4B176B21157FA65A008C77F3 /* login_input.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B19157FA65A008C77F3 /* login_input.png */; };
+		4B176B22157FA65A008C77F3 /* login_submit_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B1A157FA65A008C77F3 /* login_submit_btn.png */; };
+		4B176B23157FA65A008C77F3 /* logout_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B1B157FA65A008C77F3 /* logout_all.png */; };
+		4B176B24157FA65A008C77F3 /* logout_center.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B1C157FA65A008C77F3 /* logout_center.png */; };
+		4B176B25157FA65A008C77F3 /* logout_submit_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B176B1D157FA65A008C77F3 /* logout_submit_btn.png */; };
+		4B176B29157FA82B008C77F3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176B28157FA82B008C77F3 /* libz.dylib */; };
+		4B176B2B157FA835008C77F3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176B2A157FA835008C77F3 /* MobileCoreServices.framework */; };
+		4B176B2D157FA83F008C77F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176B2C157FA83F008C77F3 /* SystemConfiguration.framework */; };
+		4B176B2F157FA848008C77F3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B176B2E157FA848008C77F3 /* CFNetwork.framework */; };
+		4BE21D43157FB0D2008AAC15 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE21D41157FB0D1008AAC15 /* LogoutViewController.m */; };
+		4BE21D44157FB0D2008AAC15 /* LogoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE21D42157FB0D2008AAC15 /* LogoutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B176AD0157FA5C4008C77F3 /* NJUBras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NJUBras.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B176AD4157FA5C4008C77F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B176AD6157FA5C4008C77F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B176AD8157FA5C4008C77F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B176ADC157FA5C4008C77F3 /* NJUBras-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NJUBras-Info.plist"; sourceTree = "<group>"; };
+		4B176ADE157FA5C4008C77F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B176AE0157FA5C4008C77F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B176AE2157FA5C4008C77F3 /* NJUBras-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NJUBras-Prefix.pch"; sourceTree = "<group>"; };
+		4B176AE3157FA5C4008C77F3 /* NJUBrasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJUBrasAppDelegate.h; sourceTree = "<group>"; };
+		4B176AE4157FA5C4008C77F3 /* NJUBrasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJUBrasAppDelegate.m; sourceTree = "<group>"; };
+		4B176AE6157FA5C4008C77F3 /* NJUBrasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJUBrasViewController.h; sourceTree = "<group>"; };
+		4B176AE7157FA5C4008C77F3 /* NJUBrasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJUBrasViewController.m; sourceTree = "<group>"; };
+		4B176AEA157FA5C4008C77F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NJUBrasViewController.xib; sourceTree = "<group>"; };
+		4B176AF2157FA625008C77F3 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		4B176AF3157FA625008C77F3 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		4B176AF4157FA625008C77F3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		4B176AF5157FA625008C77F3 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		4B176AF6157FA625008C77F3 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		4B176AF7157FA625008C77F3 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		4B176AF8157FA625008C77F3 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		4B176AF9157FA625008C77F3 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		4B176AFA157FA625008C77F3 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		4B176AFB157FA625008C77F3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		4B176AFC157FA625008C77F3 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		4B176AFD157FA625008C77F3 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		4B176AFE157FA625008C77F3 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		4B176AFF157FA625008C77F3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		4B176B00157FA625008C77F3 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		4B176B01157FA625008C77F3 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		4B176B02157FA625008C77F3 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		4B176B03157FA625008C77F3 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		4B176B04157FA625008C77F3 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		4B176B05157FA625008C77F3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		4B176B06157FA625008C77F3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4B176B07157FA625008C77F3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4B176B09157FA625008C77F3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4B176B0A157FA625008C77F3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4B176B16157FA65A008C77F3 /* bras_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bras_ico.png; sourceTree = "<group>"; };
+		4B176B17157FA65A008C77F3 /* login_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_all.png; sourceTree = "<group>"; };
+		4B176B18157FA65A008C77F3 /* login_bac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bac.png; sourceTree = "<group>"; };
+		4B176B19157FA65A008C77F3 /* login_input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_input.png; sourceTree = "<group>"; };
+		4B176B1A157FA65A008C77F3 /* login_submit_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_submit_btn.png; sourceTree = "<group>"; };
+		4B176B1B157FA65A008C77F3 /* logout_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_all.png; sourceTree = "<group>"; };
+		4B176B1C157FA65A008C77F3 /* logout_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_center.png; sourceTree = "<group>"; };
+		4B176B1D157FA65A008C77F3 /* logout_submit_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_submit_btn.png; sourceTree = "<group>"; };
+		4B176B28157FA82B008C77F3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4B176B2A157FA835008C77F3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4B176B2C157FA83F008C77F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4B176B2E157FA848008C77F3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4BE21D40157FB0D1008AAC15 /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
+		4BE21D41157FB0D1008AAC15 /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
+		4BE21D42157FB0D2008AAC15 /* LogoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoutViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B176ACD157FA5C4008C77F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B176B2F157FA848008C77F3 /* CFNetwork.framework in Frameworks */,
+				4B176B2D157FA83F008C77F3 /* SystemConfiguration.framework in Frameworks */,
+				4B176B2B157FA835008C77F3 /* MobileCoreServices.framework in Frameworks */,
+				4B176B29157FA82B008C77F3 /* libz.dylib in Frameworks */,
+				4B176AD5157FA5C4008C77F3 /* UIKit.framework in Frameworks */,
+				4B176AD7157FA5C4008C77F3 /* Foundation.framework in Frameworks */,
+				4B176AD9157FA5C4008C77F3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B176AC5157FA5C4008C77F3 = {
+			isa = PBXGroup;
+			children = (
+				4B176B2E157FA848008C77F3 /* CFNetwork.framework */,
+				4B176B2C157FA83F008C77F3 /* SystemConfiguration.framework */,
+				4B176B2A157FA835008C77F3 /* MobileCoreServices.framework */,
+				4B176B28157FA82B008C77F3 /* libz.dylib */,
+				4B176ADA157FA5C4008C77F3 /* NJUBras */,
+				4B176AD3157FA5C4008C77F3 /* Frameworks */,
+				4B176AD1157FA5C4008C77F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B176AD1157FA5C4008C77F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B176AD0157FA5C4008C77F3 /* NJUBras.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B176AD3157FA5C4008C77F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B176AD4157FA5C4008C77F3 /* UIKit.framework */,
+				4B176AD6157FA5C4008C77F3 /* Foundation.framework */,
+				4B176AD8157FA5C4008C77F3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B176ADA157FA5C4008C77F3 /* NJUBras */ = {
+			isa = PBXGroup;
+			children = (
+				4B176AF1157FA625008C77F3 /* ASIHTTPRequest */,
+				4B176B08157FA625008C77F3 /* MBProgressHUD */,
+				4B176AE3157FA5C4008C77F3 /* NJUBrasAppDelegate.h */,
+				4B176AE4157FA5C4008C77F3 /* NJUBrasAppDelegate.m */,
+				4B176AE6157FA5C4008C77F3 /* NJUBrasViewController.h */,
+				4B176AE7157FA5C4008C77F3 /* NJUBrasViewController.m */,
+				4BE21D40157FB0D1008AAC15 /* LogoutViewController.h */,
+				4BE21D41157FB0D1008AAC15 /* LogoutViewController.m */,
+				4BE21D42157FB0D2008AAC15 /* LogoutViewController.xib */,
+				4B176AE9157FA5C4008C77F3 /* NJUBrasViewController.xib */,
+				4B176ADB157FA5C4008C77F3 /* Supporting Files */,
+			);
+			path = NJUBras;
+			sourceTree = "<group>";
+		};
+		4B176ADB157FA5C4008C77F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B176B15157FA65A008C77F3 /* Resources */,
+				4B176ADC157FA5C4008C77F3 /* NJUBras-Info.plist */,
+				4B176ADD157FA5C4008C77F3 /* InfoPlist.strings */,
+				4B176AE0157FA5C4008C77F3 /* main.m */,
+				4B176AE2157FA5C4008C77F3 /* NJUBras-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B176AF1157FA625008C77F3 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4B176AF2157FA625008C77F3 /* ASIAuthenticationDialog.h */,
+				4B176AF3157FA625008C77F3 /* ASIAuthenticationDialog.m */,
+				4B176AF4157FA625008C77F3 /* ASICacheDelegate.h */,
+				4B176AF5157FA625008C77F3 /* ASIDataCompressor.h */,
+				4B176AF6157FA625008C77F3 /* ASIDataCompressor.m */,
+				4B176AF7157FA625008C77F3 /* ASIDataDecompressor.h */,
+				4B176AF8157FA625008C77F3 /* ASIDataDecompressor.m */,
+				4B176AF9157FA625008C77F3 /* ASIDownloadCache.h */,
+				4B176AFA157FA625008C77F3 /* ASIDownloadCache.m */,
+				4B176AFB157FA625008C77F3 /* ASIFormDataRequest.h */,
+				4B176AFC157FA625008C77F3 /* ASIFormDataRequest.m */,
+				4B176AFD157FA625008C77F3 /* ASIHTTPRequest.h */,
+				4B176AFE157FA625008C77F3 /* ASIHTTPRequest.m */,
+				4B176AFF157FA625008C77F3 /* ASIHTTPRequestConfig.h */,
+				4B176B00157FA625008C77F3 /* ASIHTTPRequestDelegate.h */,
+				4B176B01157FA625008C77F3 /* ASIInputStream.h */,
+				4B176B02157FA625008C77F3 /* ASIInputStream.m */,
+				4B176B03157FA625008C77F3 /* ASINetworkQueue.h */,
+				4B176B04157FA625008C77F3 /* ASINetworkQueue.m */,
+				4B176B05157FA625008C77F3 /* ASIProgressDelegate.h */,
+				4B176B06157FA625008C77F3 /* Reachability.h */,
+				4B176B07157FA625008C77F3 /* Reachability.m */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		4B176B08157FA625008C77F3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4B176B09157FA625008C77F3 /* MBProgressHUD.h */,
+				4B176B0A157FA625008C77F3 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4B176B15157FA65A008C77F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B176B16157FA65A008C77F3 /* bras_ico.png */,
+				4B176B17157FA65A008C77F3 /* login_all.png */,
+				4B176B18157FA65A008C77F3 /* login_bac.png */,
+				4B176B19157FA65A008C77F3 /* login_input.png */,
+				4B176B1A157FA65A008C77F3 /* login_submit_btn.png */,
+				4B176B1B157FA65A008C77F3 /* logout_all.png */,
+				4B176B1C157FA65A008C77F3 /* logout_center.png */,
+				4B176B1D157FA65A008C77F3 /* logout_submit_btn.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B176ACF157FA5C4008C77F3 /* NJUBras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B176AEE157FA5C4008C77F3 /* Build configuration list for PBXNativeTarget "NJUBras" */;
+			buildPhases = (
+				4B176ACC157FA5C4008C77F3 /* Sources */,
+				4B176ACD157FA5C4008C77F3 /* Frameworks */,
+				4B176ACE157FA5C4008C77F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NJUBras;
+			productName = NJUBras;
+			productReference = 4B176AD0157FA5C4008C77F3 /* NJUBras.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B176AC7157FA5C4008C77F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NJUBras;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4B176ACA157FA5C4008C77F3 /* Build configuration list for PBXProject "NJUBras" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B176AC5157FA5C4008C77F3;
+			productRefGroup = 4B176AD1157FA5C4008C77F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B176ACF157FA5C4008C77F3 /* NJUBras */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B176ACE157FA5C4008C77F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B176ADF157FA5C4008C77F3 /* InfoPlist.strings in Resources */,
+				4B176AEB157FA5C4008C77F3 /* NJUBrasViewController.xib in Resources */,
+				4B176B1E157FA65A008C77F3 /* bras_ico.png in Resources */,
+				4B176B1F157FA65A008C77F3 /* login_all.png in Resources */,
+				4B176B20157FA65A008C77F3 /* login_bac.png in Resources */,
+				4B176B21157FA65A008C77F3 /* login_input.png in Resources */,
+				4B176B22157FA65A008C77F3 /* login_submit_btn.png in Resources */,
+				4B176B23157FA65A008C77F3 /* logout_all.png in Resources */,
+				4B176B24157FA65A008C77F3 /* logout_center.png in Resources */,
+				4B176B25157FA65A008C77F3 /* logout_submit_btn.png in Resources */,
+				4BE21D44157FB0D2008AAC15 /* LogoutViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B176ACC157FA5C4008C77F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B176AE1157FA5C4008C77F3 /* main.m in Sources */,
+				4B176AE5157FA5C4008C77F3 /* NJUBrasAppDelegate.m in Sources */,
+				4B176AE8157FA5C4008C77F3 /* NJUBrasViewController.m in Sources */,
+				4B176B0B157FA625008C77F3 /* ASIAuthenticationDialog.m in Sources */,
+				4B176B0C157FA625008C77F3 /* ASIDataCompressor.m in Sources */,
+				4B176B0D157FA625008C77F3 /* ASIDataDecompressor.m in Sources */,
+				4B176B0E157FA625008C77F3 /* ASIDownloadCache.m in Sources */,
+				4B176B0F157FA625008C77F3 /* ASIFormDataRequest.m in Sources */,
+				4B176B10157FA625008C77F3 /* ASIHTTPRequest.m in Sources */,
+				4B176B11157FA625008C77F3 /* ASIInputStream.m in Sources */,
+				4B176B12157FA625008C77F3 /* ASINetworkQueue.m in Sources */,
+				4B176B13157FA625008C77F3 /* Reachability.m in Sources */,
+				4B176B14157FA625008C77F3 /* MBProgressHUD.m in Sources */,
+				4BE21D43157FB0D2008AAC15 /* LogoutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B176ADD157FA5C4008C77F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B176ADE157FA5C4008C77F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B176AE9157FA5C4008C77F3 /* NJUBrasViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B176AEA157FA5C4008C77F3 /* en */,
+			);
+			name = NJUBrasViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B176AEC157FA5C4008C77F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B176AED157FA5C4008C77F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B176AEF157FA5C4008C77F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NJUBras/NJUBras-Prefix.pch";
+				INFOPLIST_FILE = "NJUBras/NJUBras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B176AF0157FA5C4008C77F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NJUBras/NJUBras-Prefix.pch";
+				INFOPLIST_FILE = "NJUBras/NJUBras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B176ACA157FA5C4008C77F3 /* Build configuration list for PBXProject "NJUBras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B176AEC157FA5C4008C77F3 /* Debug */,
+				4B176AED157FA5C4008C77F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B176AEE157FA5C4008C77F3 /* Build configuration list for PBXNativeTarget "NJUBras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B176AEF157FA5C4008C77F3 /* Debug */,
+				4B176AF0157FA5C4008C77F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B176AC7157FA5C4008C77F3 /* Project object */;
+}
